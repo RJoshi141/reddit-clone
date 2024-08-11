@@ -20,30 +20,33 @@ function Post({ title, content, author, date }) {
 
   return (
     <div className="post">
-      <h2>{title}</h2>
-      <p>{content}</p>
-      <small>Posted by {author} on {new Date(date).toLocaleString()}</small>
-      <div className="post-actions">
-        <button onClick={handleUpvote}>Upvote ({upvotes})</button>
+      <div className="upvote-section">
+        <button onClick={handleUpvote} className="upvote-button">↑</button>
+        <div className="upvotes">{upvotes}</div>
       </div>
-      <div className="comments">
-        <h3>Comments</h3>
-        {comments.map((comment, index) => (
-          <div key={index} className="comment">
-            <p>{comment.text}</p>
-            <small>Commented on {new Date(comment.date).toLocaleString()}</small>
-          </div>
-        ))}
+      <div className="post-content">
+        <h2>{title}</h2>
+        <p>{content}</p>
+        <small>Posted by {author} on {new Date(date).toLocaleString()}</small>
+        <div className="comments">
+          <h3>Comments</h3>
+          {comments.map((comment, index) => (
+            <div key={index} className="comment">
+              <p>{comment.text}</p>
+              <small>Commented on {new Date(comment.date).toLocaleString()}</small>
+            </div>
+          ))}
+        </div>
+        <form onSubmit={handleCommentSubmit} className="comment-form">
+          <input
+            type="text"
+            placeholder="Add a comment"
+            value={commentText}
+            onChange={(e) => setCommentText(e.target.value)}
+          />
+          <button type="submit">Submit</button>
+        </form>
       </div>
-      <form onSubmit={handleCommentSubmit} className="comment-form">
-        <input
-          type="text"
-          placeholder="Add a comment"
-          value={commentText}
-          onChange={(e) => setCommentText(e.target.value)}
-        />
-        <button type="submit">Submit</button>
-      </form>
     </div>
   );
 }

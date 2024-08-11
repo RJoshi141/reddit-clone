@@ -1,0 +1,41 @@
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.navbar-search {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.navbar-search input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.navbar-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+.user-profile {
+    margin-top: 20px;
+  }
+  
+  .user-profile h1 {
+    margin-bottom: 20px;
+  }
+  
+  .user-profile h2 {
+    margin-bottom: 10px;
+  }
+  
+  .user-profile ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-profile ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
