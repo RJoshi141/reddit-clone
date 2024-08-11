@@ -1,25 +1,26 @@
 .post {
   display: flex;
-  padding: 15px;
   background-color: white;
   border-radius: 5px;
   margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
 .upvote-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .upvote-button {
   background-color: transparent;
   border: none;
-  font-size: 1.5em;
+  font-size: 1.8em;
   cursor: pointer;
   color: #ff4500;
+  margin-bottom: 5px;
 }
 
 .upvote-button:hover {
@@ -27,7 +28,7 @@
 }
 
 .upvotes {
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #333;
 }
 
@@ -35,50 +36,42 @@
   flex: 1;
 }
 
-.post-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.post-content h2 {
-  margin-top: 0;
-}
-
-.comments {
-  margin-top: 20px;
-}
-
 .comment-form {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
 }
 
 .comment-form input {
   flex: 1;
-  padding: 8px;
+  padding: 10px;
   margin-right: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
-.comment-form button {
-  padding: 8px 15px;
-  background-color: #007bff;
-  color: white;
+.comment-form .cancel-button, .comment-form .comment-button {
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.comment-form button:hover {
+.comment-form .cancel-button {
+  background-color: #333;
+  color: white;
+  margin-right: 10px;
+}
+
+.comment-form .cancel-button:hover {
+  background-color: #555;
+}
+
+.comment-form .comment-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.comment-form .comment-button:hover {
   background-color: #0056b3;
 }
