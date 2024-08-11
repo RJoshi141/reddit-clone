@@ -13,3 +13,57 @@
     color: #888;
   }
   
+
+  .post-actions {
+    margin-top: 10px;
+  }
+  
+  .post-actions button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .post-actions button:hover {
+    background-color: #218838;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .comment-form {
+    margin-top: 10px;
+  }
+  
+  .comment-form input {
+    width: calc(100% - 85px);
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .comment-form button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-form button:hover {
+    background-color: #0056b3;
+  }
+  
