@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Post.css';
 
-function Post({ title, content, author, date }) {
+function Post({ title, content, author, date, avatar }) {
   const [upvotes, setUpvotes] = useState(0);
   const [comments, setComments] = useState([]);
   const [commentText, setCommentText] = useState('');
@@ -25,9 +25,14 @@ function Post({ title, content, author, date }) {
         <div className="upvotes">{upvotes}</div>
       </div>
       <div className="post-content">
-        <h2>{title}</h2>
+        <div className="post-header">
+          <img src={avatar} alt={`${author}'s avatar`} className="avatar" />
+          <div>
+            <h2>{title}</h2>
+            <small>Posted by {author} on {new Date(date).toLocaleString()}</small>
+          </div>
+        </div>
         <p>{content}</p>
-        <small>Posted by {author} on {new Date(date).toLocaleString()}</small>
         <div className="comments">
           <h3>Comments</h3>
           {comments.map((comment, index) => (
