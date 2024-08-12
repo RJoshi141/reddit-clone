@@ -1,9 +1,9 @@
 .sidebar {
   width: 250px;
-  background-color: white;
+  background-color: #EFF7FF; /* Light BG */
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .sidebar-section {
@@ -13,6 +13,7 @@
 .sidebar h2 {
   font-size: 1.2em;
   margin-bottom: 15px;
+  color: #336699; /* UI Text */
 }
 
 .sidebar ul {
@@ -28,14 +29,15 @@
 
 .sidebar ul li i {
   margin-right: 10px;
-  color: #007bff;
+  color: #FF5700; /* Reddit Orange */
 }
 
 .sidebar ul li a {
   text-decoration: none;
-  color: #007bff;
+  color: #FF4500; /* Orangered */
 }
 
 .sidebar ul li a:hover {
   text-decoration: underline;
+  color: #FF8b60; /* Upvote */
 }

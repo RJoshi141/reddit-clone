@@ -1,10 +1,11 @@
 .navbar {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  background-color: #FF5700; /* Reddit Orange */
+  color: #FFFFFF; /* White */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .navbar-brand {
@@ -13,29 +14,61 @@
 }
 
 .logo {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
+  border-radius: 50%; /* Rounded logo */
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3); /* Glow effect */
+}
+
+.brand-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FFFFFF; /* White */
 }
 
 .navbar-search {
   flex: 1;
-  margin: 0 20px;
+  margin: 0 30px; /* Increased margin for better spacing */
 }
 
 .navbar-search input {
   width: 100%;
-  padding: 8px 12px;
-  border-radius: 20px;
-  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 25px; /* More rounded corners */
+  border: 1px solid #C6C6C6; /* Neutral */
+  background-color: #FFFFFF; /* White */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Subtle shadow for input */
 }
 
-.navbar-links a {
-  color: white;
-  margin: 0 10px;
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #FFFFFF; /* White */
   text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar-links a:hover {
-  text-decoration: underline;
+.nav-link:first-child {
+  margin-left: 15px; /* Space between "Home" and search bar */
+}
+
+.nav-link:hover {
+  background-color: #FF8b60; /* Upvote color */
+  transform: scale(1.1); /* Slightly increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
+}
+
+.nav-link.active {
+  background-color: #FF4500; /* Orangered */
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4); /* Subtle active effect */
 }

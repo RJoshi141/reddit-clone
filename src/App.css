@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
-  background-color: #f6f7f8;
-  color: #1c1c1c;
+  background-color: #EFF7FF; /* Light BG */
+  color: #336699; /* UI Text */
 }
 
 .content {
@@ -18,11 +18,11 @@
 }
 
 h1, h2 {
-  color: #1c1c1c;
+  color: #1c1c1c; /* Retain the dark color for headings */
 }
 
 h3 {
-  color: #1c1c1c;
+  color: #1c1c1c; /* Retain the dark color for subheadings */
   margin-top: 20px;
 }
 

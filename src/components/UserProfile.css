@@ -1,22 +1,86 @@
 .user-profile {
-    margin-top: 20px;
-  }
-  
-  .user-profile h1 {
-    margin-bottom: 20px;
-  }
-  
-  .user-profile h2 {
-    margin-bottom: 10px;
-  }
-  
-  .user-profile ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .user-profile ul li {
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #EFF7FF; /* Light BG */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #C6C6C6; /* Neutral */
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #172E35; /* Urchin */
+}
+
+.user-bio {
+  font-size: 1em;
+  color: #666; /* Slightly darker for better readability */
+}
+
+.profile-section {
+  margin-top: 20px;
+}
+
+.profile-section h2 {
+  font-size: 1.5em;
+  color: #007bff; /* Reddit Blue for section headers */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #C6C6C6; /* Neutral */
+  padding-bottom: 5px;
+}
+
+.subreddit-list,
+.upvotes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.subreddit-item,
+.upvote-item {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #FFFFFF; /* White */
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.subreddit-item a,
+.upvote-item a {
+  color: #172E35; /* Urchin for links */
+  text-decoration: none;
+}
+
+.subreddit-item a:hover,
+.upvote-item a:hover {
+  text-decoration: underline;
+}
+
+.post-title {
+  font-weight: bold;
+  color: #007bff; /* Reddit Blue for post titles */
+}
+
+.upvote-count {
+  font-size: 0.9em;
+  color: #9494FF; /* Downvote color for contrast */
+  margin-left: 10px;
+}

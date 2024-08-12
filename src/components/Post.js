@@ -5,7 +5,7 @@ import Comment from './Comment';
 function Post({ title, content, author, date }) {
   const [comments, setComments] = useState([]);
   const [commentText, setCommentText] = useState('');
-  const [upvotes, setUpvotes] = useState(0); // Add upvotes state
+  const [upvotes, setUpvotes] = useState(0);
 
   const handleCommentSubmit = (e) => {
     e.preventDefault();
@@ -25,12 +25,16 @@ function Post({ title, content, author, date }) {
 
   return (
     <div className="post">
-      <div className="upvote-section">
-        <button onClick={handleUpvote} className="upvote-button">↑</button>
-        <div className="upvotes">{upvotes}</div>
+      <div className="post-header">
+        <div className="upvote-section">
+          <button onClick={handleUpvote} className="upvote-button">↑</button>
+          <div className="upvotes">{upvotes}</div>
+        </div>
+        <div className="post-title">
+          <h2>{title}</h2>
+        </div>
       </div>
       <div className="post-content">
-        <h2>{title}</h2>
         <p>{content}</p>
         <small>Posted by {author} on {new Date(date).toLocaleString()}</small>
         <div className="comments">
