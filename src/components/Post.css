@@ -1,3 +1,4 @@
+/* Common Styles for Light Mode */
 .post {
   display: flex;
   flex-direction: column; /* Stack the header and content vertically */
@@ -94,5 +95,50 @@
 }
 
 .comment-form .comment-button:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+}
+
+/* Dark Mode Styles */
+body.dark-mode .post {
+  background-color: #2d2d2d; /* Dark grey background */
+  color: #e0e0e0; /* Light text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+}
+
+body.dark-mode .post-header {
+  border-bottom: 2px solid #333; /* Darker border for header */
+}
+
+body.dark-mode .upvote-button {
+  color: #FF4500; /* Keep Orangered for upvote button */
+}
+
+body.dark-mode .upvote-button:hover {
+  color: #FF8b60; /* Keep Crusta for hover effect */
+}
+
+body.dark-mode .upvotes {
+  color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .post-title h2 {
+  color: #e0e0e0; /* Light color for title */
+}
+
+body.dark-mode .comment-form input {
+  background-color: #444; /* Dark input background */
+  color: #e0e0e0; /* Light text color */
+  border: 1px solid #666; /* Darker border for input */
+}
+
+body.dark-mode .comment-form .cancel-button {
+  background-color: #555; /* Darker gray for cancel button */
+}
+
+body.dark-mode .comment-form .comment-button {
+  background-color: #007bff; /* Keep Reddit Blue for comment button */
+}
+
+body.dark-mode .comment-form .comment-button:hover {
   background-color: #0056b3; /* Darker blue for hover */
 }

@@ -1,0 +1,32 @@
+/* src/components/NotificationList.css */
+.notification-list {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-list h2 {
+    font-size: 1.5em;
+    color: #FF5700; /* Reddit Orange */
+    margin-bottom: 15px;
+  }
+  
+  .notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-item p {
+    margin: 0;
+  }
+  
+  .notification-time {
+    font-size: 0.8em;
+    color: #666;
+  }
+  

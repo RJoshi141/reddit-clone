@@ -39,3 +39,85 @@ h3 {
     width: 100%;
   }
 }
+
+
+
+/* src/App.css */
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1e1e1e; /* Dark background color */
+  color: #e0e0e0; /* Default light text color */
+}
+
+body.dark-mode .navbar {
+  background-color: #172E35; /* Urchin color */
+}
+
+body.dark-mode .navbar .logo {
+  filter: brightness(0) invert(1); /* Adjust logo visibility */
+}
+
+body.dark-mode .sidebar {
+  background-color: #2d2d2d; /* Dark grey */
+  color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .sidebar a {
+  color: #e0e0e0; /* Light text color for links */
+}
+
+body.dark-mode .sidebar a:hover {
+  color: #007bff; /* Highlight color for links on hover */
+}
+
+body.dark-mode .post {
+  background-color: #2d2d2d; /* Dark grey */
+  color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .post .post-title {
+  color: #ff4500; /* Orangered for post titles */
+}
+
+body.dark-mode .comment-form input {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode .comment-form .cancel-button {
+  background-color: #444;
+}
+
+body.dark-mode .comment-form .comment-button {
+  background-color: #007bff;
+}
+
+body.dark-mode .user-profile {
+  background-color: #1e1e1e; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .user-profile h1, 
+body.dark-mode .user-profile h2, 
+body.dark-mode .user-profile p {
+  color: #e0e0e0; /* Ensure text is light */
+}
+
+body.dark-mode .settings {
+  background-color: #1e1e1e; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .settings h1,
+body.dark-mode .settings label {
+  color: #e0e0e0; /* Ensure text is light */
+}
+
+body.dark-mode .settings .slider {
+  background-color: #007bff; /* Dark mode slider color */
+}
+
+body.dark-mode .settings .slider:before {
+  background-color: #e0e0e0; /* Slider knob color */
+}
