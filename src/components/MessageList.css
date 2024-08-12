@@ -1,20 +1,45 @@
+/* src/components/Messages.css */
+
+/* Default styles */
 .message-list {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .message-list h2 {
-    margin-bottom: 20px;
-  }
-  
-  .message-item {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .message-item:hover {
-    background-color: #f5f5f5;
-  }
-  
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-list h2 {
+  margin-bottom: 20px;
+  color: #172E35; /* Urchin color for headers */
+}
+
+.message-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Light gray for borders */
+}
+
+.message-item:hover {
+  background-color: #f5f5f5; /* Light gray for hover effect */
+}
+
+/* Dark mode styles */
+.dark-mode .message-list {
+  background-color: #1C1C1C; /* Dark background for messages */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .message-list h2 {
+  color: #FF5700; /* Reddit Orange for headers */
+}
+
+.dark-mode .message-item {
+  padding: 10px;
+  border-bottom: 1px solid #333; /* Darker border for items */
+  color: #EFF7FF; /* Light text color */
+}
+
+.dark-mode .message-item:hover {
+  background-color: #2C2C2C; /* Darker gray for hover effect */
+}

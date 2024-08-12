@@ -1,16 +1,17 @@
 /* src/components/Settings.css */
+
 .settings {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background by default */
+    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .settings h2 {
+  .settings h1 {
     font-size: 1.5em;
-    color: #333;
+    color: #333; /* Dark text color by default */
   }
   
   .settings-item {
@@ -21,8 +22,9 @@
     display: flex;
     align-items: center;
     font-size: 1.2em;
-    color: #333;
+    color: #333; /* Dark text color by default */
     cursor: pointer;
+    position: relative;
   }
   
   .dark-mode-toggle {
@@ -36,9 +38,10 @@
     display: inline-block;
     width: 34px;
     height: 20px;
-    background-color: #ddd;
+    background-color: #ddd; /* Light gray background for slider */
     border-radius: 34px;
     margin-left: 10px;
+    transition: background-color 0.4s;
   }
   
   .slider:before {
@@ -47,17 +50,39 @@
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: white;
+    background-color: white; /* White knob */
     left: 4px;
     top: 4px;
-    transition: .4s;
+    transition: transform 0.4s;
   }
   
-  .dark-mode-toggle:checked + .slider {
-    background-color: #ff4500;;
+  /* Dark mode styles */
+  .dark-mode .settings {
+    background-color: #1C1C1C; /* Dark background for settings */
   }
   
-  .dark-mode-toggle:checked + .slider:before {
+  .dark-mode .settings h1 {
+    color: #FF4500 !important; /* Reddit Orange for headers in dark mode */
+  }
+  
+  .dark-mode .dark-mode-label {
+    color: #EFF7FF; /* Light text color for label */
+  }
+  
+  .dark-mode .slider {
+    background-color: #FF4500; /* Reddit Orange background for slider in dark mode */
+  }
+  
+  .dark-mode .slider:before {
+    background-color: #1C1C1C; /* Dark knob for dark mode */
+  }
+  
+  /* Ensure the slider reflects dark mode */
+  .dark-mode .dark-mode-toggle:checked + .slider {
+    background-color: #FF4500; /* Reddit Orange when toggle is active */
+  }
+  
+  .dark-mode .dark-mode-toggle:checked + .slider:before {
     transform: translateX(14px);
   }
   

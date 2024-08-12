@@ -1,9 +1,12 @@
+/* src/components/UserProfile.css */
+
+/* Default styles */
 .user-profile {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   background-color: #EFF7FF; /* Light BG */
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,4 +86,46 @@
   font-size: 0.9em;
   color: #9494FF; /* Downvote color for contrast */
   margin-left: 10px;
+}
+
+/* Dark mode styles */
+.dark-mode .user-profile {
+  background-color: #172E35; /* Urchin for dark mode background */
+  color: #EFF7FF; /* Light BG for text */
+}
+
+.dark-mode .profile-picture {
+  border: 2px solid #C6C6C6; /* Neutral */
+}
+
+.dark-mode .profile-info h1 {
+  color: #EFF7FF; /* Light text color */
+}
+
+.dark-mode .user-bio {
+  color: #C6C6C6; /* Neutral for bio */
+}
+
+.dark-mode .profile-section h2 {
+  color: #FF5700; /* Reddit Orange for section headers */
+  border-bottom: 2px solid #C6C6C6; /* Neutral for border */
+}
+
+.dark-mode .subreddit-item,
+.dark-mode .upvote-item {
+  background-color: #1C1C1C; /* Darker background for items */
+  color: #EFF7FF; /* Light text color */
+}
+
+.dark-mode .subreddit-item a,
+.dark-mode .upvote-item a {
+  color: #FF5700; /* Reddit Orange for links */
+}
+
+.dark-mode .post-title {
+  color: #FF5700; /* Reddit Orange for post titles */
+}
+
+.dark-mode .upvote-count {
+  color: #9494FF; /* Downvote color for contrast */
 }

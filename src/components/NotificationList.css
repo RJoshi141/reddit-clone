@@ -1,32 +1,63 @@
 /* src/components/NotificationList.css */
+
+/* Default styles */
 .notification-list {
-    background-color: #ffffff; /* White background */
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .notification-list h2 {
-    font-size: 1.5em;
-    color: #FF5700; /* Reddit Orange */
-    margin-bottom: 15px;
-  }
-  
-  .notification-item {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .notification-item:last-child {
-    border-bottom: none;
-  }
-  
-  .notification-item p {
-    margin: 0;
-  }
-  
-  .notification-time {
-    font-size: 0.8em;
-    color: #666;
-  }
-  
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-list h2 {
+  font-size: 1.5em;
+  color: #FF5700; /* Reddit Orange for headers */
+  margin-bottom: 15px;
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Light gray for borders */
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item p {
+  margin: 0;
+  color: #172E35; /* Urchin for text */
+}
+
+.notification-time {
+  font-size: 0.8em;
+  color: #666; /* Slightly darker gray for timestamps */
+}
+
+/* Dark mode styles */
+.dark-mode .notification-list {
+  background-color: #1C1C1C; /* Dark background for notifications */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .notification-list h2 {
+  color: #FF5700; /* Reddit Orange for headers */
+}
+
+.dark-mode .notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #333; /* Darker border for items */
+}
+
+.dark-mode .notification-item:last-child {
+  border-bottom: none;
+}
+
+.dark-mode .notification-item p {
+  color: #EFF7FF; /* Light color for text */
+}
+
+.dark-mode .notification-time {
+  color: #9494FF; /* Light blue for timestamps */
+}
