@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Post from './Post';
 import PostForm from './PostForm';
+import './Subreddit.css';
 
 function Subreddit() {
   const [posts, setPosts] = useState([

@@ -124,6 +124,9 @@ body.dark-mode .upvotes {
 body.dark-mode .post-title h2 {
   color: #e0e0e0; /* Light color for title */
 }
+body.dark-mode .comments h3 {
+  color: #FF4500; /* Reddit Orange for "Comments" text in dark mode */
+}
 
 body.dark-mode .comment-form input {
   background-color: #444; /* Dark input background */
@@ -142,3 +145,5 @@ body.dark-mode .comment-form .comment-button {
 body.dark-mode .comment-form .comment-button:hover {
   background-color: #0056b3; /* Darker blue for hover */
 }
+
+/* Remove the previous .comment-form::before styles for "Comments" text */

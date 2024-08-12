@@ -1,9 +1,36 @@
+/* src/App.css */
+
+/* General Styles */
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #336699; /* UI Text color */
+}
+
 .App {
   display: flex;
   flex-direction: column;
-  font-family: Arial, sans-serif;
-  background-color: #EFF7FF; /* Light BG */
-  color: #336699; /* UI Text */
+  min-height: 100vh; /* Ensure the container takes full viewport height */
+  background-color: #EFF7FF; /* Light background color */
+}
+
+/* Light Mode Styles */
+.App {
+  background-color: #EFF7FF; /* Light background color */
+}
+
+h1, h2 {
+  color: #1c1c1c; /* Retain the dark color for headings */
+}
+
+h3 {
+  color: #1c1c1c; /* Retain the dark color for subheadings */
+  margin-top: 20px;
 }
 
 .content {
@@ -15,15 +42,6 @@
 .main-content {
   flex: 1;
   margin-left: 20px;
-}
-
-h1, h2 {
-  color: #1c1c1c; /* Retain the dark color for headings */
-}
-
-h3 {
-  color: #1c1c1c; /* Retain the dark color for subheadings */
-  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -40,14 +58,14 @@ h3 {
   }
 }
 
-
-
-/* src/App.css */
-
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #1e1e1e; /* Dark background color */
   color: #e0e0e0; /* Default light text color */
+}
+
+body.dark-mode .App {
+  background-color: #1e1e1e; /* Ensure the container background matches dark mode */
 }
 
 body.dark-mode .navbar {
