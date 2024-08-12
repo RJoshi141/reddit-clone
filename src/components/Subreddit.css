@@ -1,150 +1,154 @@
-/* src/components/Subreddit.css */
-
-/* Container for the Subreddit component */
 .subreddit {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff; /* Light background for light mode */
-    color: #333; /* Dark text color for readability */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Heading for the Subreddit timeline */
-  .subreddit h1 {
-    font-size: 2em;
-    color: #007bff; /* Reddit Blue */
-    margin-bottom: 20px;
-  }
-  
-  /* Styling for the Post Form component */
-  .post-form {
-    margin-bottom: 20px;
-  }
-  
-  /* Individual post styling */
-  .post {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #ffffff; /* Light background for light mode */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Post header styling */
-  .post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  /* Post title styling */
-  .post-title h2 {
-    margin: 0;
-    color: #1c1c1c; /* Dark gray for title */
-  }
-  
-  /* Post content styling */
-  .post-content {
-    font-size: 1em;
-    color: #666; /* Slightly darker for better readability */
-  }
-  
-  /* Small text for post metadata */
-  .post-content small {
-    display: block;
-    margin-top: 10px;
-    color: #999; /* Light gray for metadata */
-  }
-  
-  /* Styling for the comment form */
-  .comment-form {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  /* Input field in the comment form */
-  .comment-form input {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #ccc; /* Neutral border color */
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  
-  /* Buttons in the comment form */
-  .comment-form button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-  
-  .comment-form .cancel-button {
-    background-color: #ccc; /* Light gray for cancel button */
-    color: #333; /* Dark text */
-  }
-  
-  .comment-form .cancel-button:hover {
-    background-color: #bbb; /* Slightly darker gray on hover */
-  }
-  
-  .comment-form .comment-button {
-    background-color: #007bff; /* Reddit Blue for comment button */
-    color: #fff; /* White text */
-  }
-  
-  .comment-form .comment-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
-  /* Dark Mode Styles */
-  body.dark-mode .subreddit {
-    background-color: #2d2d2d; /* Dark background */
-    color: #e0e0e0; /* Light text color */
-  }
-  
-  body.dark-mode .subreddit h1 {
-    color: #ff4500; /* Reddit Orange for heading */
-  }
-  
-  body.dark-mode .post {
-    background-color: #1e1e1e; /* Dark background for posts */
-    color: #e0e0e0; /* Light text color */
-  }
-  
-  body.dark-mode .post-title h2 {
-    color: #ff4500; /* Reddit Orange for post titles */
-  }
-  
-  body.dark-mode .post-content {
-    color: #e0e0e0; /* Light text color */
-  }
-  
-  body.dark-mode .post-content small {
-    color: #999; /* Lighter gray for metadata */
-  }
-  
-  body.dark-mode .comment-form input {
-    background-color: #333; /* Dark background for input */
-    color: #e0e0e0; /* Light text color */
-    border: 1px solid #666; /* Darker border for input */
-  }
-  
-  body.dark-mode .comment-form .cancel-button {
-    background-color: #444; /* Darker gray for cancel button */
-    color: #fff; /* White text in dark mode */
-  }
-  
-  body.dark-mode .comment-form .comment-button {
-    background-color: #007bff; /* Reddit Blue for comment button */
-  }
-  
-  body.dark-mode .comment-form .comment-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subreddit h1 {
+  font-size: 2em;
+  color: #ff4500;
+  margin-bottom: 20px;
+}
+
+.post {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.post-user-logo {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.post-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-community {
+  font-weight: bold;
+  color: #0079d3;
+}
+
+.post-author-time {
+  display: flex;
+  gap: 10px;
+}
+
+.post-title {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #ff4500;
+}
+
+.post-content {
+  margin-top: 10px;
+  color: #333;
+}
+
+.post-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.upvote-section {
+  display: flex;
+  align-items: center;
+}
+
+.upvote-button, .reply-button, .award-button, .share-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.upvotes {
+  margin-left: 5px;
+}
+
+.comment-form {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comment-form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-button {
+  background-color: #ff4500;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .subreddit {
+  background-color: #1a1a1b;
+  color: #d7dadc;
+}
+
+body.dark-mode .post {
+  background-color: #1a1a1b;
+  color: #d7dadc;
+}
+
+body.dark-mode .post-title {
+  color: #ff4500;
+}
+
+body.dark-mode .post-community {
+  color: #33a8ff;
+}
+
+body.dark-mode .post-actions button {
+  color: #ff4500;
+}
+
+body.dark-mode .comment-form input {
+  background-color: #333;
+  color: #d7dadc;
+  border: 1px solid #666;
+}
+
+body.dark-mode .comment-button {
+  background-color: #ff4500;
+  color: white;
+}
+
+body.dark-mode .cancel-button {
+  background-color: #666;
+  color: white;
+}

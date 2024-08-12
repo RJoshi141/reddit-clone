@@ -1,11 +1,8 @@
-/* src/components/UserProfile.css */
-
-/* Default styles */
 .user-profile {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #EFF7FF; /* Light BG */
+  background-color: #EFF7FF;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +18,7 @@
   height: 100px;
   border-radius: 50%;
   margin-right: 20px;
-  border: 2px solid #C6C6C6; /* Neutral */
+  border: 2px solid #C6C6C6;
 }
 
 .profile-info {
@@ -31,12 +28,12 @@
 .profile-info h1 {
   margin: 0;
   font-size: 2em;
-  color: #172E35; /* Urchin */
+  color: #172E35;
 }
 
 .user-bio {
   font-size: 1em;
-  color: #666; /* Slightly darker for better readability */
+  color: #666;
 }
 
 .profile-section {
@@ -45,30 +42,43 @@
 
 .profile-section h2 {
   font-size: 1.5em;
-  color: #007bff; /* Reddit Blue for section headers */
+  color: #007bff;
   margin-bottom: 10px;
-  border-bottom: 2px solid #C6C6C6; /* Neutral */
+  border-bottom: 2px solid #C6C6C6;
   padding-bottom: 5px;
 }
 
+/* Ensure that the list items are aligned directly under the headings */
 .subreddit-list,
 .upvotes-list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .subreddit-item,
 .upvote-item {
   padding: 10px;
   border-radius: 5px;
-  background-color: #FFFFFF; /* White */
+  background-color: #FFFFFF;
   margin-bottom: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* Flexbox fix for items aligning to the right */
+.subreddit-list,
+.upvotes-list {
+  display: block;
+}
+
+.subreddit-item,
+.upvote-item {
+  display: block;
+}
+
 .subreddit-item a,
 .upvote-item a {
-  color: #172E35; /* Urchin for links */
+  color: #172E35;
   text-decoration: none;
 }
 
@@ -79,53 +89,53 @@
 
 .post-title {
   font-weight: bold;
-  color: #007bff; /* Reddit Blue for post titles */
+  color: #007bff;
 }
 
 .upvote-count {
   font-size: 0.9em;
-  color: #9494FF; /* Downvote color for contrast */
+  color: #9494FF;
   margin-left: 10px;
 }
 
 /* Dark mode styles */
 .dark-mode .user-profile {
-  background-color: #172E35; /* Urchin for dark mode background */
-  color: #EFF7FF; /* Light BG for text */
+  background-color: #172E35;
+  color: #EFF7FF;
 }
 
 .dark-mode .profile-picture {
-  border: 2px solid #C6C6C6; /* Neutral */
+  border: 2px solid #C6C6C6;
 }
 
 .dark-mode .profile-info h1 {
-  color: #EFF7FF; /* Light text color */
+  color: #EFF7FF;
 }
 
 .dark-mode .user-bio {
-  color: #C6C6C6; /* Neutral for bio */
+  color: #C6C6C6;
 }
 
 .dark-mode .profile-section h2 {
-  color: #FF5700; /* Reddit Orange for section headers */
-  border-bottom: 2px solid #C6C6C6; /* Neutral for border */
+  color: #FF5700;
+  border-bottom: 2px solid #C6C6C6;
 }
 
 .dark-mode .subreddit-item,
 .dark-mode .upvote-item {
-  background-color: #1C1C1C; /* Darker background for items */
-  color: #EFF7FF; /* Light text color */
+  background-color: #1C1C1C;
+  color: #EFF7FF;
 }
 
 .dark-mode .subreddit-item a,
 .dark-mode .upvote-item a {
-  color: #FF5700; /* Reddit Orange for links */
+  color: #FF5700;
 }
 
 .dark-mode .post-title {
-  color: #FF5700; /* Reddit Orange for post titles */
+  color: #FF5700;
 }
 
 .dark-mode .upvote-count {
-  color: #9494FF; /* Downvote color for contrast */
+  color: #9494FF;
 }

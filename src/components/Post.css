@@ -1,149 +1,165 @@
-/* Common Styles for Light Mode */
+/* src/components/Post.css */
+
+/* Container for the Post component */
 .post {
-  display: flex;
-  flex-direction: column; /* Stack the header and content vertically */
-  background-color: #FFFFFF; /* White background */
-  border-radius: 8px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  background-color: #ffffff; /* Light background for light mode */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Header section with profile and post details */
 .post-header {
   display: flex;
-  align-items: center; /* Align items vertically */
-  margin-bottom: 15px; /* Space between header and content */
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.upvote-section {
+.profile-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-right: 15px; /* Space between upvote section and title */
+  margin-right: 20px;
 }
 
-.upvote-button {
-  background-color: transparent;
-  border: none;
-  font-size: 2em; /* Larger font size for the upvote button */
-  cursor: pointer;
-  color: #FF4500; /* Orange Red for upvote button */
-}
-
-.upvote-button:hover {
-  color: #FF8b60; /* Crusta for hover effect */
-}
-
-.upvotes {
-  font-size: 1.8em; /* Slightly larger font size for the upvote count */
-  color: #336699; /* UI Text color */
-  display: flex;
-  align-items: center; /* Center text vertically */
+.community-name {
   font-weight: bold;
-  margin-left: -10px; /* Adjust to align number under arrow */
+}
+
+.username {
+  font-style: italic;
+}
+
+.post-time {
+  margin-left: auto;
+  color: #999; /* Light gray for timestamp */
 }
 
 .post-title {
-  flex: 1; /* Allow title to take remaining space */
-}
-
-.post-title h2 {
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  font-size: 1.5em;
   color: #333; /* Dark gray for title */
 }
 
 .post-content {
-  flex: 1;
+  font-size: 1em;
+  color: #666; /* Slightly darker for better readability */
 }
 
-.comment-form {
-  margin-top: 20px;
+.post-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  margin-top: 15px;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.count {
+  margin-left: 5px;
+}
+
+.action-text {
+  margin-left: 5px;
+}
+
+/* Styling for the comment form */
+.comment-form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .comment-form input {
   flex: 1;
   padding: 12px;
-  margin-right: 10px;
-  border: 1px solid #C6C6C6; /* Neutral color for border */
+  border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1em;
-}
-
-.comment-form .cancel-button, .comment-form .comment-button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
   font-size: 1em;
 }
 
 .comment-form .cancel-button {
-  background-color: #333; /* Dark gray for cancel button */
-  color: #FFFFFF; /* White text */
+  background-color: #ccc;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .comment-form .cancel-button:hover {
-  background-color: #555; /* Slightly lighter gray for hover */
+  background-color: #bbb;
 }
 
 .comment-form .comment-button {
-  background-color: #007bff; /* Reddit Blue for comment button */
-  color: #FFFFFF; /* White text */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .comment-form .comment-button:hover {
-  background-color: #0056b3; /* Darker blue for hover */
+  background-color: #0056b3;
 }
 
 /* Dark Mode Styles */
 body.dark-mode .post {
-  background-color: #2d2d2d; /* Dark grey background */
-  color: #e0e0e0; /* Light text color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+  background-color: #1e1e1e;
+  color: #e0e0e0;
 }
 
-body.dark-mode .post-header {
-  border-bottom: 2px solid #333; /* Darker border for header */
+body.dark-mode .post-title {
+  color: #ff4500; /* Reddit Orange for post titles */
 }
 
-body.dark-mode .upvote-button {
-  color: #FF4500; /* Keep Orangered for upvote button */
+body.dark-mode .post-content {
+  color: #e0e0e0;
 }
 
-body.dark-mode .upvote-button:hover {
-  color: #FF8b60; /* Keep Crusta for hover effect */
-}
-
-body.dark-mode .upvotes {
-  color: #e0e0e0; /* Light text color */
-}
-
-body.dark-mode .post-title h2 {
-  color: #e0e0e0; /* Light color for title */
-}
-body.dark-mode .comments h3 {
-  color: #FF4500; /* Reddit Orange for "Comments" text in dark mode */
+body.dark-mode .post-time {
+  color: #999;
 }
 
 body.dark-mode .comment-form input {
-  background-color: #444; /* Dark input background */
-  color: #e0e0e0; /* Light text color */
-  border: 1px solid #666; /* Darker border for input */
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #666;
 }
 
 body.dark-mode .comment-form .cancel-button {
-  background-color: #555; /* Darker gray for cancel button */
+  background-color: #444;
+  color: #fff;
 }
 
 body.dark-mode .comment-form .comment-button {
-  background-color: #007bff; /* Keep Reddit Blue for comment button */
+  background-color: #007bff;
 }
 
 body.dark-mode .comment-form .comment-button:hover {
-  background-color: #0056b3; /* Darker blue for hover */
+  background-color: #0056b3;
 }
-
-/* Remove the previous .comment-form::before styles for "Comments" text */
