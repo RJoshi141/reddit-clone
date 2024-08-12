@@ -137,6 +137,7 @@
   
   body.dark-mode .comment-form .cancel-button {
     background-color: #444; /* Darker gray for cancel button */
+    color: #fff; /* White text in dark mode */
   }
   
   body.dark-mode .comment-form .comment-button {
