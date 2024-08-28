@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({ isDarkMode }) {
+  const logo = isDarkMode ? '/src/media/dark-logo.svg' : '/src/media/light-logo.svg';
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <img src="/logo.png" alt="Reddit Clone Logo" className="logo" />
-        <span className="brand-name">Reddit Clone</span>
+      <img src={logo} alt="Reddit Clone Logo" className="logo" />        
+      <span className="brand-name">Reddit Clone</span>
       </div>
       <div className="navbar-search">
         <input type="text" placeholder="Search" />
